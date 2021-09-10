@@ -1,0 +1,69 @@
+// font family 
+$primaryFont: 'Lato', sans-serif;
+$secondaryFont: 'Playfair Display SC', serif; 
+
+
+// color palette 
+$greenishCyan: #50E3C2; 
+$black: #2C2C2C; 
+$iceBlue: #FAFFFE; 
+$twilightBlue: #063974; 
+$lightLightBlue: #D2F9F1; 
+$spruce: #0C5F4C;
+
+
+html {
+    font-size: 125%;
+}
+
+body { 
+    font-family: $primaryFont; 
+    margin: 0;
+    padding: 0;
+}
+
+.logo, 
+.button,
+button,
+.mainSpan { 
+    font-family: $secondaryFont; 
+}
+
+.wrapper { 
+    width: 90%; 
+    margin: 0 auto; 
+    max-width: 1080px;
+}
+
+a { 
+    text-decoration: none;
+}
+
+a,
+a:visited
+button { 
+    color: $iceBlue; 
+}
+
+.fontAwesome a,
+.fontAwesome a:visited,
+.contactUs a, 
+.contactUs a:visited {
+    color: $black; 
+}
+
+a:hover,
+i:hover { 
+    border-bottom: 2px solid blue;
+    color: blue; 
+}
+
+a:focus,
+button:focus, 
+a:focus { 
+    border: 2px solid red; 
+}
+
+img { 
+    width: 100%; 
+}

@@ -1,0 +1,39 @@
+// color palette 
+$greenishCyan: #50E3C2; 
+$black: #2C2C2C; 
+$iceBlue: #FAFFFE; 
+$twilightBlue: #063974; 
+$lightLightBlue: #D2F9F1; 
+$spruce: #0C5F4C;
+
+
+.home, 
+.home:visited, 
+.blog, 
+.blog:visited, 
+.contact, 
+.contact:visited, 
+.logo, 
+.logo:visited { 
+    color: $greenishCyan; 
+}
+
+.home:hover,
+.blog:hover,
+.contact:hover,
+.logo:hover { 
+    color: blue; 
+}
+
+.button:hover,
+button:hover { 
+    border-top: 5px solid $iceBlue; 
+    border-left: 5px solid $iceBlue; 
+    border-right: 5px solid $twilightBlue; 
+    border-bottom: 5px solid $twilightBlue; 
+    color: white; 
+}
+
+.galleryContainer ul li:hover { 
+    transform: scale(1.5);
+}

@@ -339,6 +339,15 @@ input:focus + label {
     box-shadow: $greenishCyan -25px 25px;
 }
 
+.leftContainer { 
+    margin: 75px 0; 
+    margin-left: 25%; 
+}
+
+.contactContainer{ 
+    margin: 10vh auto; 
+}
+
 .freeTrip,
 .text,
 .contactForm,

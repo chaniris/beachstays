@@ -632,6 +632,15 @@ input:focus + label {
           box-shadow: #50E3C2 -25px 25px;
 }
 
+.leftContainer {
+  margin: 75px 0;
+  margin-left: 25%;
+}
+
+.contactContainer {
+  margin: 10vh auto;
+}
+
 .freeTrip,
 .text,
 .contactForm,
@@ -823,7 +832,8 @@ span,
 .newLocations,
 .planAhead,
 .blogAside div:nth-child(2),
-.blogAside div:last-child {
+.blogAside div:last-child,
+.leftContainer {
     text-align: center;
   }
 
@@ -881,8 +891,13 @@ article,
 form,
 .blogH3,
 .contactH1,
-.contactAside {
+.contactAside,
+.leftContainer {
     margin: 0 auto;
+  }
+
+  .leftContainer {
+    padding: 25px;
   }
 
   .mainH1,
@@ -1000,6 +1015,14 @@ article {
   footer {
     font-size: 0.5rem;
   }
+
+  .contactH1 {
+    text-align: center;
+  }
+
+  .contactContainer {
+    margin: 0 auto;
+  }
 }
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -1018,6 +1041,8 @@ article {
   .contactForm {
     padding: 25px;
     width: 90%;
+    -webkit-box-shadow: #50E3C2 5px 5px;
+            box-shadow: #50E3C2 5px 5px;
   }
 
   .credit {
@@ -1033,6 +1058,7 @@ article {
 
   .fontAwesome {
     display: inline-block;
+    font-size: 1.25rem;
   }
 
   .galleryContainer ul li:hover {
@@ -1061,5 +1087,10 @@ article {
 
   .profilePic {
     width: 50%;
+  }
+
+  .contactForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }

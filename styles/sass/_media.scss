@@ -1,0 +1,283 @@
+// color palette 
+$greenishCyan: #50E3C2; 
+$black: #2C2C2C; 
+$iceBlue: #FAFFFE; 
+$twilightBlue: #063974; 
+$lightLightBlue: #D2F9F1; 
+$spruce: #0C5F4C;
+
+
+/* portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .blogH1 { 
+        font-size: 2rem; 
+    }
+
+    .blogH1, 
+    .blogH2
+    .mainH1,
+    span,
+    .mainH2,
+    .guyanaTextContainer p,
+    .button, 
+    .newLocations,
+    .planAhead,
+    .blogAside div:nth-child(2),
+    .blogAside div:last-child,
+    .leftContainer { 
+        text-align: center;
+    }
+
+    .mainHeader,
+    .contactHeader { 
+        height: 50vh; 
+    }
+    
+    .mainHeader { 
+        transition: ease-in 1s;
+    }
+    
+    .mainContainer,
+    .blogH2 { 
+        padding: 50px; 
+    }
+
+    .navContainer ul, 
+    .guyana, 
+    .button,
+    .galleryContainer ul,
+    .information ul,
+    .planTrip,
+    .formContainer-top,
+    .blogMain {
+        display: block; 
+    }
+
+    .navContainer ul { 
+        text-align: right;
+    }
+
+    .titleContainer { 
+        bottom: 10vh; 
+    }
+
+    .headerImgContainer,
+    .guyanaImgContainer img,
+    .imgSection,
+    .timestamp,
+    .blogFooter p { 
+        display: none; 
+    }
+
+    .mainH1,
+    .mainH2,
+    .guyana,
+    .guyanaTextContainer p,
+    .newLocations .textContainer, 
+    .planAhead .textContainer,
+    .blogH1, 
+    article, 
+    .commentContainer, 
+    form,
+    .blogH3, 
+    .contactH1,
+    .contactAside, 
+    .leftContainer { 
+        margin: 0 auto; 
+    }
+
+    .leftContainer { 
+        padding: 25px; 
+    }
+
+    .mainH1,
+    .contactH1 { 
+        font-size: 2rem; 
+    }
+
+    .mainSpan { 
+        font-size: 4rem;
+    }
+
+    .blogSpan { 
+        color: $black; 
+    }
+
+    .mainH2,
+    .guyanaTextContainer p,
+    .information li { 
+        padding: 25px; 
+    }
+
+    .guyana { 
+        padding-top: 25px; 
+    }
+
+    .guyanaTextContainer,
+    .galleryContainer ul li,
+    .newLocations,
+    .planAhead,
+    .freeTrip,
+    .information li, 
+    .navContainer p, 
+    .navContainer nav,
+    .box1,
+    .box2,
+    .contactAside, 
+    footer,
+    .mainContainer { 
+        width: 100%;  
+    }
+
+    .gallery, 
+    .planTrip { 
+        margin: 25px 0; 
+    }
+
+    .galleryContainer ul,
+    .galleryContainer ul li,
+    .information { 
+        padding: 0; 
+    }
+
+    .galleryContainer ul li:hover { 
+        transform: none; 
+    }
+
+    .information { 
+        padding-bottom: 0; 
+    }
+
+    .newLocations .textContainer, 
+    .planAhead .textContainer { 
+        width: 90%; 
+    }
+
+    .imageContainer-1 ,
+    .imageContainer-2 { 
+        margin: 50px 0; 
+    }
+
+    .imageContainer-1 img,
+    .imageContainer-2 img,
+    .blogForm,
+    .imgContainer img, 
+    article { 
+        box-shadow: none;
+    }
+
+    .blogForm {
+        width: 100%; 
+        display: absolute; 
+        padding: 25px; 
+        margin: 0 auto; 
+    }
+
+    textarea { 
+        height: 100px;
+    }
+
+    .contactAside { 
+        font-size: 0.75rem; 
+    }
+
+    .imgContainer img, 
+    article { 
+        padding: 0; 
+    }
+
+    .blogAside {   
+        padding: 25px; 
+        width: 100%; 
+        position: absolute; 
+    }
+
+    .blogAside div p { 
+        padding: 0 25px; 
+    }
+
+    .blogAside div:last-child { 
+        background-color: $lightLightBlue;
+    }
+
+    footer { 
+        font-size: 0.5rem;
+    }
+
+    .contactH1{
+        text-align: center;
+    }
+
+    .contactContainer { 
+        margin: 0 auto; 
+    }
+}
+
+/* landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .mainH1 { 
+        font-size: 1.75rem; 
+    }
+
+    .mainSpan { 
+        font-size: 2.5rem;
+    }
+
+    .blogForm { 
+        background-color: $lightLightBlue; 
+    }
+
+    .contactForm { 
+        padding: 25px;
+        width: 90%;  
+        box-shadow: $greenishCyan 5px 5px;
+    }
+
+    .credit { 
+        display: none; 
+    }
+
+    .contactAside { 
+        position: relative; 
+        margin-top: 35vh; 
+        line-height: 1rem; 
+        text-align: center;
+    }
+
+    .fontAwesome { 
+        display: inline-block;
+        font-size: 1.25rem;
+    }
+
+    .galleryContainer ul li:hover { 
+    transform: none;
+    }
+}
+
+/* landscape phones and down */
+@media (max-width: 480px) {
+    .mainH1 { 
+        font-size: 1.5rem; 
+    }
+
+    .mainSpan { 
+        font-size: 2rem;
+    }
+
+    form,
+    .text { 
+        width: 100%; 
+    }
+    
+    .userContainer { 
+        display: block; 
+    }
+
+    .profilePic { 
+        width: 50%; 
+    }
+
+    .contactForm {
+        box-shadow: none;
+    }
+}

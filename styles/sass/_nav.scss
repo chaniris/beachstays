@@ -1,0 +1,104 @@
+// ========== nav bar ========== //
+
+.navContainer {
+    height: 10vh; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    .navLogo {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .navLogo,
+    .navLogo:visited {
+        font-size: 1.73rem; 
+        color: $color-aqua; 
+    }
+    nav {
+        text-align: right;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        width: 50%; 
+        position: relative; 
+        .mobileMenu {
+            display: flex; 
+            flex-direction: row;
+            justify-content: right;
+        } 
+        .mainMenu {
+            li {
+                a {
+                    font-size: 1rem; 
+                    line-height: 29px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                } 
+                a, 
+                a:visited {
+                    color: white; 
+                } 
+                a:focus, 
+                a:hover {
+                    color: $color-aqua; 
+                    border-bottom: 2px solid $color-aqua; 
+                    transition: all 0.2s; 
+                } 
+                .selected, 
+                .selected:visited {
+                    color: $color-aqua; 
+                }
+            } 
+        } 
+    } 
+} 
+
+.mainMenu {
+    z-index: 100;
+    text-align: right;
+    padding: 15px; 
+    display: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+}
+
+#toggleBar {
+    display: none;
+}
+
+// ========== media query ========== //
+
+/* landscape phone to portrait tablet */
+@media (max-width: 940px) {
+    .navContainer {
+        nav {
+        width: 20%; 
+            .mainMenu {
+                display: none;
+                background-color: rgba($color-darkblue, 0.9);
+                top: 5vh; 
+            }
+        }
+        .mainMenu.hamburger {
+            display: block;
+        }
+        #toggleBar {
+            display: block;
+        }
+    } 
+}
+
+/* landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .navContainer {
+        nav {
+        width: 30%; 
+        }
+    } 
+}

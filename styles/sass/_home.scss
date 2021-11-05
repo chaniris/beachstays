@@ -1,0 +1,373 @@
+// ========== header ========== //
+
+.homeHeader {
+    height: 100vh; 
+    .homeBackground {
+        background-image: url(../images/home-image-1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        .titleContainer {
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            position: relative; 
+            // welcome to
+            h1 {
+                font-size: 3.1rem; 
+                line-height: 58px; 
+                letter-spacing: 6.7px;
+                color: $color-green; 
+                margin: 0 auto; 
+                z-index: 10;
+                // main beachstays logo 
+                .titleLogo {
+                    font-size: 5.56rem; 
+                    letter-spacing: 0; 
+                    color: $color-darkblue; 
+                    display: block; 
+                } 
+            } 
+            // sunglass image in header container  
+            .headerImgContainer {
+                width: 40%; 
+                position: absolute;
+                left: 0; 
+                bottom: -10vh; 
+                min-width: 500px;
+            } 
+        } 
+    } 
+} 
+
+
+// ========== visit guyana ========== //
+
+.visit {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px auto; 
+    .visitTextContainer {
+        width: 60%; 
+    } 
+    .visitImgContainer {
+        box-shadow: -20px 20px $color-aqua;
+        width: 300px; 
+    } 
+} 
+
+
+// ========== gallery ========== //
+
+.galleryContainer {
+    background-color: $color-lightaqua; 
+    ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 70px; 
+        .galleryImgContainer {
+            padding: 5px; 
+        } 
+        .galleryImgContainer:hover {
+            transform: scale(1.5);
+            transition: all 0.2s; 
+        }
+    } 
+} 
+
+
+// ========== beach houses, community, etc ========== //
+
+.beachHouses ul {
+    margin: 100px auto; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+        width: 50%; 
+        margin: 0 auto; 
+        margin-bottom: 25px; 
+        .beachHouseTitleContainer {
+            display: flex; 
+            flex-direction: row;
+            width: 100%; 
+            .iconContainer {
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                margin: 10px; 
+                i {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    background-color: $color-aqua; 
+                    color: white; 
+                    width: 50px; 
+                    height: 50px; 
+                    display: flex; 
+                    flex-direction: column;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+            } 
+        } 
+        p {
+            // icon width (50px) + margin-left (10px) + margin-right (10px)
+            margin: 0 70px; 
+        } 
+    }
+} 
+
+
+// ========== new locations, plan ahead ========== //
+
+h5 {
+    font-size: 1.75rem; 
+    line-height: 58px;
+    letter-spacing: 3.8px;
+} 
+
+.newLocations {
+    background-color: $color-lightaqua;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    height: 1000px; 
+    position: relative; 
+    .leftContainer, 
+    .rightContainer {
+        h5 {
+            color: $color-darkblue; 
+        } 
+        width: 45%; 
+        position: absolute; 
+        .leftContainerImg,
+        .rightContainerImg {
+            height: 500px;
+        } 
+        .leftContainerText,
+        .rightContainerText {
+            margin: 100px 0; 
+        } 
+    } 
+}
+
+.leftContainer {
+    left: 0; 
+    top: -25px; 
+    .leftContainerImg {
+        box-shadow: 20px 20px $color-aqua;
+    } 
+    .leftContainerText {
+        text-align: right;
+        p {
+            margin-left: 10vw; 
+        } 
+    } 
+} 
+
+.rightContainer {
+    right: 0; 
+    bottom: -25px; 
+    .rightContainerImg {
+        box-shadow: -20px 20px $color-aqua;
+    } 
+    .rightContainerText p {
+        margin-right: 10vw; 
+    }
+} 
+
+
+// ========== free trip ========== //
+
+.freeTrip {
+    text-align: center;
+    margin: 100px auto; 
+    padding: 0 100px;
+    h5 {
+        color: $color-green; 
+    }  
+} 
+
+
+// ========== media queries ========== //
+
+@media (max-width: 1400px) {
+    .visit {
+        .visitTextContainer {
+            margin-right: 50px; 
+        } 
+    }
+    .galleryContainer {
+        ul {
+            flex-wrap: wrap;
+        } 
+    } 
+    .beachHouses ul {
+        li {
+            p {
+                margin: 0; 
+                margin-left: 70px; 
+            } 
+        } 
+    }
+}
+
+/* portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .visit {
+        flex-direction: column;
+        text-align: center;
+        div:nth-child(1) {
+            order: 2; 
+            width: 90%; 
+            margin: 0 auto; 
+            } 
+        div:nth-child(2) {
+            order: 1; 
+            margin: 0 auto; 
+            margin-bottom: 100px; 
+        } 
+    }
+    .galleryContainer {
+        ul {
+            .galleryImgContainer:hover {
+                transform: none; 
+            }
+        } 
+    }
+    .beachHouses ul {
+        flex-direction: column;
+        li {
+            width: 100%; 
+            .beachHouseTitleContainer {
+                .iconContainer {
+                    i {
+                        font-size: 1.1rem;
+                        width: 40px; 
+                        height: 40px; 
+                    }
+                }
+            }
+            p {
+                // icon width (30px) + margin-left (10px) + margin-right (10px)
+                margin-left: 60px; 
+            } 
+        } 
+    }
+    .newLocations {
+        flex-direction: column; 
+        height: auto; 
+        position: unset;  
+        padding-top: 100px; 
+        .leftContainer, 
+        .rightContainer {
+            width: 80%; 
+            margin: 0 auto; 
+            position: unset; 
+            .leftContainerImg,
+            .rightContainerImg {
+                height: 300px;
+            } 
+            .leftContainerText,
+            .rightContainerText {
+                margin: 100px 0; 
+                text-align: center;
+            } 
+        } 
+        .leftContainer {
+            .leftContainerText p {
+                margin-left: 0; 
+            } 
+        } 
+        .rightContainer {
+            display: flex; 
+            flex-direction: column;
+            div:nth-child(1) {
+                order: 2; 
+            } 
+            div:nth-child(2) {
+                order: 1; 
+            } 
+            .rightContainerText p {
+                margin-right: 0; 
+            }
+        } 
+    }
+    // background image
+    .imgSection {
+        display: none; 
+        
+    } 
+}
+
+/* landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%; 
+    } 
+    .homeHeader {
+        .homeBackground {
+            height: 100vh;
+            .titleContainer {
+                h1 {
+                    .titleLogo {
+                        font-size: 7rem; 
+                        line-height: 78px; 
+                        .break {
+                            display: block; 
+                        } 
+                    } 
+                } 
+                .headerImgContainer {
+                    display: none; 
+                } 
+            } 
+        } 
+    } 
+    .visit {
+
+        .visitImgContainer {
+            display: none; 
+        } 
+    }     
+    .newLocations {
+        .leftContainer, 
+        .rightContainer {
+            .leftContainerImg,
+            .rightContainerImg {
+                box-shadow: none;
+            } 
+        } 
+    }
+    .freeTrip {
+        text-align: center;
+        padding: 0 50px;
+    } 
+}
+
+/* landscape phones and down */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%; 
+    } 
+    body {
+        font-size: 112%; 
+        .homeHeader {
+            .homeBackground {
+                .titleContainer {
+                    h1 {
+                        font-size: 2.1rem; 
+                        .titleLogo {
+                            font-size: 6rem; 
+                            line-height: 68px; 
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    } 
+}

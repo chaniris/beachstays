@@ -1,69 +1,88 @@
-// font family 
-$primaryFont: 'Lato', sans-serif;
-$secondaryFont: 'Playfair Display SC', serif; 
-
-
-// color palette 
-$greenishCyan: #50E3C2; 
-$black: #2C2C2C; 
-$iceBlue: #FAFFFE; 
-$twilightBlue: #063974; 
-$lightLightBlue: #D2F9F1; 
-$spruce: #0C5F4C;
-
-
 html {
-    font-size: 125%;
-}
+    scroll-behavior: smooth;
+} 
 
-body { 
-    font-family: $primaryFont; 
-    margin: 0;
-    padding: 0;
-}
-
-.logo, 
-.button,
-button,
-.mainSpan { 
-    font-family: $secondaryFont; 
-}
-
-.wrapper { 
-    width: 90%; 
+body {
+    max-width: 2600px; 
+    font-family: $font-primary;
+    font-size: 125%; 
     margin: 0 auto; 
-    max-width: 1080px;
+    padding: 0; 
+} 
+
+.wrapper {
+    width: 80%; 
+    margin: 0 auto; 
+} 
+
+.navLogo,
+.titleLogo, 
+.button {
+    font-family: $font-secondary;
+} 
+
+h2 {
+    font-size: 4.35rem; 
+    line-height: 58px; 
+    letter-spacing: 9px;
+    color: $color-whiteish; 
+} 
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 58px;
+    letter-spacing: 3.8px;
+    color: $color-green; 
+} 
+
+h4 {
+    font-size: 1.5rem; 
+    line-height: 58px;
+    letter-spacing: 3.2px;
 }
 
-a { 
+ul {
+    padding: 0; 
+} 
+
+li {
+    list-style-type: none;
+} 
+
+a {
     text-decoration: none;
-}
+    outline: none; 
+} 
 
-a,
-a:visited
-button { 
-    color: $iceBlue; 
-}
+p {
+    line-height: 32px;
+    letter-spacing: 2px;
+} 
 
-.fontAwesome a,
-.fontAwesome a:visited,
-.contactUs a, 
-.contactUs a:visited {
-    color: $black; 
-}
-
-a:hover,
-i:hover { 
-    border-bottom: 2px solid blue;
-    color: blue; 
-}
-
-a:focus,
-button:focus, 
-a:focus { 
-    border: 2px solid red; 
-}
-
-img { 
+img {
     width: 100%; 
-}
+    height: 100%; 
+    object-fit: cover;
+} 
+
+.button {
+    background: $color-darkblue;
+    font-size: 1rem; 
+    letter-spacing: 1px;
+    line-height: 32px;
+    color: white; 
+    padding: 10px 20px; 
+} 
+
+.button:focus, 
+.button:hover {
+    background-color: $color-aqua; 
+    color: white; 
+    transition: all 0.2s; 
+} 
+
+.button, 
+button {
+    cursor: pointer; 
+    border: 0; 
+} 

@@ -1,157 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
+    
     <!-- link to google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+
     <!-- link to font awesome -->
     <script src="https://kit.fontawesome.com/1eff98ce6d.js" crossorigin="anonymous"></script>
+
     <!-- link to stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <header class="blogHeader">
-        <div class="navContainer wrapper">
-            <p><a href="index.html" class="logo">Beachstays</a></p>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="blog.html" class="blog">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div> <!-- navContainer wrapper -->
+    <header class='blogHeader'>
+        <div class="blogBackground">
+            <div class="wrapper">
+                <div class="navContainer">
+                    <a class="navLogo" href="./home.html">Beachstays</a>
+                    <!------- nav START ------->
+                    <nav>
+                        <div class="mobileMenu">
+                            <button id="toggleBar" class='button'>Menu</button>
+                        </div>
+                        <ul class="mainMenu">
+                            <li><a class="selected" href="./home.html">Home</a></li>
+                            <li><a href="./home.html#about">About</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!------- nav END ------->
+                </div>
+            </div>
+            <!------- title START ------->
+            <div class="blogTitleContainer">
+                <div class="wrapper">
+                    <h2>Blog</h2>
+                </div>
+            </div>
+            <!------- title END ------->
+        </div>
     </header>
-
-    <main class="blogMain">
-        <div class="mainContainer">
-            <h1 class="blogH1">Blog</h1>
-
-            <div class="imgContainer">
+    
+    <main class='blogMain'>
+        <section class="leftBlogContainer">
+            <!------- blog img START ------->
+            <div class="blogImgContainer">
                 <img src="./images/post-image.jpg" alt="closeup of walkway to beach house">
             </div>
-
-            <article>
-                <h2 class="blogH2">Five days of ocean seas</h2>
-
-                <cite class="timestamp">Monday January 21th, 2019 by <strong>Bora</strong></cite>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam, omnis pariatur deserunt
-                    eius eligendi, molestiae quis amet ut perferendis officia maxime aut saepe alias fuga modi dolorum
-                    nesciunt temporibus voluptatem. Ea quos recusandae suscipit rem at vitae aspernatur et reprehenderit
-                    natus ullam reiciendis, animi excepturi blanditiis architecto? Corrupti, rem.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aperiam quo iste in, ab temporibus
-                    neque rerum quidem facilis sed explicabo nam totam omnis tempore dolorum facere excepturi? Expedita
-                    odio quisquam asperiores? Distinctio eveniet vero totam modi fugiat mollitia, vitae, deserunt
-                    quaerat, tempora cupiditate est minus deleniti iusto similique iste voluptatem suscipit. Vel aliquid
-                    fugit dignissimos nostrum delectus quis, quisquam quam impedit culpa voluptate molestias odio libero
-                    repellat reiciendis inventore accusantium unde temporibus cum exercitationem.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus exercitationem incidunt
-                    explicabo. Sapiente voluptatibus odit officia, repudiandae consequatur minima quaerat assumenda
-                    minus dolorum cum animi iste magnam repellat quam nemo quidem adipisci exercitationem quia facere a.
-                    Numquam consectetur porro quaerat eligendi, laudantium minima aut est provident suscipit veniam
-                    iusto enim. Blanditiis aliquam, nisi, consequuntur iusto quibusdam consequatur hic tenetur modi
-                    dolor a qui incidunt fugiat deleniti rerum animi dicta quia sunt consectetur! Repellendus odit sit
-                    dicta temporibus quibusdam non et blanditiis aliquam asperiores reprehenderit molestiae porro dolore
-                    aspernatur inventore nemo nam nostrum, nobis iusto, in, repellat laboriosam ut? Mollitia, minima?
-                </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum impedit eaque voluptas minima
-                    aliquam sapiente ducimus, ratione velit sunt libero voluptatum tempore voluptatibus culpa sit
-                    doloribus quae modi? Eligendi ea repudiandae nemo ad eius eaque nihil facilis deserunt laudantium
-                    asperiores?</p>
+            <!------- blog img END ------->
+    
+            <!------- blog article START ------->
+            <article class="blogTextContainer">
+                <div class="wrapper">
+                    <h3>Five days of ocean seas</h3>
+                    <cite>Monday January 21th, 2019 by <strong>Bora</strong></cite>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam, omnis pariatur deserunt
+                        eius eligendi, molestiae quis amet ut perferendis officia maxime aut saepe alias fuga modi dolorum
+                        nesciunt temporibus voluptatem. Ea quos recusandae suscipit rem at vitae aspernatur et reprehenderit
+                        natus ullam reiciendis, animi excepturi blanditiis architecto? Corrupti, rem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aperiam quo iste in, ab temporibus
+                        neque rerum quidem facilis sed explicabo nam totam omnis tempore dolorum facere excepturi? Expedita
+                        odio quisquam asperiores? Distinctio eveniet vero totam modi fugiat mollitia, vitae, deserunt
+                        quaerat, tempora cupiditate est minus deleniti iusto similique iste voluptatem suscipit. Vel aliquid
+                        fugit dignissimos nostrum delectus quis, quisquam quam impedit culpa voluptate molestias odio libero
+                        repellat reiciendis inventore accusantium unde temporibus cum exercitationem.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus exercitationem incidunt
+                        explicabo. Sapiente voluptatibus odit officia, repudiandae consequatur minima quaerat assumenda
+                        minus dolorum cum animi iste magnam repellat quam nemo quidem adipisci exercitationem quia facere a.
+                        Numquam consectetur porro quaerat eligendi, laudantium minima aut est provident suscipit veniam
+                        iusto enim. Blanditiis aliquam, nisi, consequuntur iusto quibusdam consequatur hic tenetur modi
+                        dolor a qui incidunt fugiat deleniti rerum animi dicta quia sunt consectetur! Repellendus odit sit
+                        dicta temporibus quibusdam non et blanditiis aliquam asperiores reprehenderit molestiae porro dolore
+                        aspernatur inventore nemo nam nostrum, nobis iusto, in, repellat laboriosam ut? Mollitia, minima?
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum impedit eaque voluptas minima
+                        aliquam sapiente ducimus, ratione velit sunt libero voluptatum tempore voluptatibus culpa sit
+                        doloribus quae modi? Eligendi ea repudiandae nemo ad eius eaque nihil facilis deserunt laudantium
+                        asperiores?</p>
+                </div>
             </article>
-
-            <section class="commentContainer wrapper">
-                <h3 class="blogH3">Comments:</h3>
-
-                <div class="userContainer">
-                    <div class="profilePic">
-                        <img src="./images/comment-image.jpg" alt="headshot of Reyansh">
+            <!------- blog article END ------->
+    
+            <!------- comment section START ------->
+            <div class="commentContainer">
+                <div class="wrapper">
+                    <h6>Comments:</h6>
+                    <div class="userContainer">
+                        <div class="userImgContainer">
+                            <img src="./images/comment-image.jpg" alt="headshot of Reyansh">
+                        </div>
+                        <div class="userTextContainer">
+                            <p>Tuesday October 9th, 2019 by Reyansh</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente adipisci illum
+                                reprehenderit nam sint porro, obcaecati unde, nostrum ab placeat sit, ex explicabo
+                                repellendus error labore eum. Fugiat, repellendus tenetur.</p>
+                        </div>
                     </div>
-
-                    <div class="text">
-                        <p>Tuesday October 9th, 2019 by Reyansh</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente adipisci illum
-                            reprehenderit nam
-                            sint porro, obcaecati unde, nostrum ab placeat sit, ex explicabo repellendus error labore
-                            eum.
-                            Fugiat, repellendus tenetur.</p>
+    
+                    <div class="userContainer">
+                        <div class="userImgContainer">
+                            <img src="./images/comment-image2.jpg" alt="headshot of Olivia">
+                        </div>
+                        <div class="userTextContainer">
+                            <p>Wednesday October 10th, 2019 by Olivia</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, soluta. Culpa,
+                                perferendis. Quibusdam blanditiis atque molestiae autem ratione ipsum doloribus velit? Quo
+                                vero mollitia non, sapiente inventore consequatur nulla officiis?</p>
+                        </div>
                     </div>
+                    <!------- form container START ------->
+                    <form target="_blank" method="POST" class='blogForm'>
+                        <div class="topContainer">
+                            <label for="inputName" class="sr-only">Name</label>
+                            <input type="text" id="inputName" name="name" placeholder="Name" required="required">
+    
+                            <label for="inputEmail" class="sr-only">Email address</label>
+                            <input type="email" id="inputEmail" name="email" placeholder="Email address"
+                                required="required">
+                        </div>
+    
+                        <label for="inputMessage" class="sr-only">Comment</label>
+                        <textarea name="message" id="inputMessage" placeholder="Comment" required="required"></textarea>
+    
+                        <button type="submit" class='button'>Post Comment</button>
+                    </form>
+                    <!------- form container END ------->
                 </div>
-
-                <div class="userContainer">
-                    <div class="profilePic">
-                        <img src="./images/comment-image2.jpg" alt="headshot of Olivia">
-                    </div>
-
-                    <div class="text">
-                        <p>Wednesday October 10th, 2019 by Olivia</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat quos recusandae quas
-                            modi
-                            sint quaerat nihil, sapiente, aperiam accusamus nesciunt fugiat dolore quasi suscipit
-                            corporis enim
-                            laudantium deleniti obcaecati!</p>
-                    </div>
-                </div>
-            </section> <!-- commentContainer -->
-
-            <form action="#" class="blogForm">
-                <div class="formContainer-top">
-                    <div class="form box1">
-                        <input type="text" name="name" id="name" placeholder="" required>
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="form box2">
-                        <input type="email" name="email" id="email" placeholder="" required>
-                        <label for="email">Email address</label>
-                    </div>
-                </div>
-                <div class="form box3">
-                    <textarea id="comment" name="comment" placeholder="" maxlength="200" required></textarea>
-                    <label for="comment">Comment</label>
-                </div>
-                <button type="submit">Post Comment</button>
-            </form>
-        </div> <!-- mainContainer -->
-
-        <aside class="blogAside">
+                <!------- comment section END ------->
+            </div>
+    
+        </section>
+        <!------- aside container START ------->
+        <aside class="rightBlogContainer">
+            <div class="blogMargin"></div>
             <div>
                 <img src="./images/sidebar-image.jpg" alt="beach resort by the ocean">
             </div>
-
             <div>
-                <h4 class="mainH4">Our mission</h4>
+                <h4>Our mission</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio omnis ea vel atque earum hic
                     repellat officia consequatur temporibus.</p>
-                <a href="#">Find out more.</a>
             </div>
-
             <div>
-                <h4 class="mainH4">Recent Posts</h4>
+                <h4>Recent Posts</h4>
                 <ul>
-                    <li><span class="blogSpan">Lorem ipsum dolor sit amet</span></li>
-                    <li><span class="blogSpan">Lorem ipsum dolor sit amet</span></li>
-                    <li><span class="blogSpan">Lorem ipsum dolor sit amet</span></li>
-                    <li><span class="blogSpan">Lorem ipsum dolor sit amet</span></li>
+                    <li>
+                        <a href="#"><span class="blogSpan">Lorem ipsum dolor sit amet</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="blogSpan">Lorem ipsum dolor sit amet</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="blogSpan">Lorem ipsum dolor sit amet</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="blogSpan">Lorem ipsum dolor sit amet</span></a>
+                    </li>
                 </ul>
             </div>
-        </aside> <!-- aside -->
+        </aside>
+        <!------- aside container END ------->
     </main>
-
-    <footer class="blogFooter">
-        <p>Copyright © 2021 <a href="https://junocollege.com/">Juno College of Technology</a> (formerly HackerYou)</p>
+    
+    <!------- footer START ------->
+    <footer>
+        <p>Copyright © 2021 <a href="https://junocollege.com/" target="_blank" rel="noopener">Juno College of Technology</a>
+            (formerly HackerYou)</p>
     </footer>
-
+    <!------- footer END ------->
+    
+    <!-- link to js -->
+    <script src="./script.js"></script>
 </body>
 
 </html>

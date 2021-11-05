@@ -1,14 +1,13 @@
 @import 'setup'; 
-@import 'global';
+@import 'variables'; 
 
-@import 'main'; 
+@import 'global';
+@import 'nav'; 
 @import 'footer'; 
 
-@import 'pseudo'; 
-@import 'media'; 
-
-// contact form return
-@import 'contactReturn'; 
+@import 'home'; 
+@import 'blog'; 
+@import 'contact'; 
 
 
 // // heading (beachstay)

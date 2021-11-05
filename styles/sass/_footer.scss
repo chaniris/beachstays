@@ -1,22 +1,19 @@
-// color palette 
-$greenishCyan: #50E3C2; 
-$black: #2C2C2C; 
-$iceBlue: #FAFFFE; 
-$twilightBlue: #063974; 
-$lightLightBlue: #D2F9F1; 
-$spruce: #0C5F4C;
+// ========== footer ========== //
 
-
-footer { 
-    background-color: $black;
-    color: $iceBlue; 
+footer {
     text-align: center;
-}
-
-.blogFooter p { 
-    margin-top: 10vh; 
-}
-
-.contactfooter { 
-    margin-top: 20vh; 
+    font-size: 1rem; 
+    background: $color-black;
+    color: white; 
+    padding: 0 25px; 
+    a, 
+    a visited {
+        color: white; 
+    } 
+    a:focus, 
+    a:hover {
+        color: $color-aqua; 
+        border-bottom: 2px solid $color-aqua; 
+        transition: all 0.2s; 
+    } 
 }

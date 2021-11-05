@@ -1,5 +1,6 @@
-function displayThankYou() {
-    let name = document.getElementById("name");
-    document.getElementById("thankYou").innerHTML = "Thank you, " + name.value;
+const toggleMenu = () => {
+    let getMenu = document.querySelector('.mainMenu');
+    getMenu.classList.toggle('hamburger');
 }
-document.getElementById("myButton").onclick = displayThankYou;
+
+document.querySelector('#toggleBar').addEventListener('click', toggleMenu);

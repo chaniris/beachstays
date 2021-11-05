@@ -1199,7 +1199,7 @@ h5 {
 }
 
 .leftContactContainer {
-  z-index: 10;
+  z-index: 50;
   margin-bottom: 100px;
   background-color: #FAFFFE;
   -webkit-box-shadow: 20px 20px #50E3C2;
@@ -1239,6 +1239,7 @@ h5 {
 }
 
 .rightContactContainer {
+  z-index: 40;
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;

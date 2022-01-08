@@ -559,8 +559,8 @@ footer a:hover {
   padding: 5px;
 }
 .galleryContainer ul .galleryImgContainer:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
